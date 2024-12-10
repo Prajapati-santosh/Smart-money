@@ -15,9 +15,7 @@ function FlashBar(){
       }, [pos]);
     return (
     <div className="flash-bar">
-      <div className='text-div'>
-        <p className='text-class' style={{ transform: `translateX(${pos}px)`}}>SALE LIVE FOR PREMIUM</p>
-      </div>
+        <p className='text-class' >SALE LIVE FOR PREMIUM</p>
     </div>
   );
   

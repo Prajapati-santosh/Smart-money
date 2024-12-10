@@ -1,0 +1,82 @@
+.footerMain{
+    background-color: black;
+}
+.Footer{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    margin-top: 100%;
+}
+.Logo-text{
+    position: relative;
+    width: 50%;
+    justify-content: start;
+    margin-left: 200px;
+    font-family: denton;
+    font-size:56px;
+    color: whitesmoke;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 50px;
+}
+.container-1{
+    background-color: none; 
+}
+.heading-text{
+    font-family: gilroy-regular;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 6px;
+}
+.li{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: gilroy-regular;
+    list-style-type:none ;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: 0.3px;
+
+}
+.legal{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    border-top: 1px solid whitesmoke;
+    opacity: 0.2;
+    width: 100%;
+    margin: auto;
+}
+.copyright{
+    font-family: gilroy-regular;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    z-index: 1;
+    opacity: 1;
+}
+.privacy{
+    font-family: gilroy-regular;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    z-index: 1;
+    opacity: 1;
+}
