@@ -29,7 +29,11 @@ function MyExpense(){
         <div className="function">
             <p className="Header-text">Add your Expenses</p>
             <input  placeholder="Enter your expense" onChange={handleChange}></input>
-            <button className="button" onClick={addToList}>Add Expense</button>
+            <div className="parent">
+                <button className="button" onClick={addToList}>Add Expense</button>
+                <span class='button-shadow'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </div>
         </div>
        
         {

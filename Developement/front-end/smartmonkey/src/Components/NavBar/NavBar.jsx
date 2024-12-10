@@ -6,7 +6,7 @@ function NavBar(){
     
     return <div className="Nav">
         <FlashBar/>
-        {/* <MyExpense/> */}
+        <MyExpense/>
     </div>
 }
 
