@@ -1,0 +1,49 @@
+.message-container{
+    flex-direction: row;
+}
+
+.joke{
+    font-family:denton;
+    font-weight: 600;
+    font-size: 30px;
+    display:flex;
+    flex-direction: column;
+
+}
+.animation{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+
+.footer{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    margin-top: 9%;
+}
+.logo-404{
+    font-family:denton;
+    font-weight: 600;
+    margin-left: 20%;
+    display: flex;
+    font-size: 30px;
+}
+.mid{
+    display: flex;
+    flex-direction: row;
+}
+
+.text{
+    position: relative;
+    margin-left: 30%;
+}
+.image{
+    margin-left: 50%;
+    position: absolute;
+    z-index: -1;
+}

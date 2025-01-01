@@ -1,8 +1,9 @@
 import React from "react";
 import './Footer.css';
-function Footer(){
+function Footer(props){
+    const styleClass=props.className?props.className:"Footer";
     return <div className="footerMain">
-    <div className="Footer">
+    <div className={styleClass}>
         <p className="Logo-text">
             Smart 
             <br />&nbsp;Money.</p>
