@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../Logo/Logo";
 import './PageNotFound.css';
 import Footer from "../Footer/Footer";
-import animation from "/workspaces/Smart-money/Developement/front-end/smartmonkey/src/Assets/404.gif";
+import animation from "/workspaces/Smart-money/developement/front-end/smartmonkey/src/Assets/404.gif";
 
 function PageNotFound(){
     return <div className="joke">
