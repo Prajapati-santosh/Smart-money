@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+    {
+    "source": "/(.*)",
+    "destination": "developement/front-end/smartmonkey/public/index.html"
+    }
+    ]
+    }
