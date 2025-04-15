@@ -1,8 +1,9 @@
+
 {
     "rewrites": [
     {
     "source": "/(.*)",
-    "destination": "developement/front-end/smartmonkey/public/index.html"
+    "destination": "developement/front-end/smartmonkey/index.html"
     }
     ]
-    }
+}
