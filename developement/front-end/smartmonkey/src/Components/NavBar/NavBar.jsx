@@ -3,6 +3,7 @@ import React from "react";
 import Logo from "../Logo/Logo";
 import './NavBar.css';
 import { Link } from 'react-router-dom';
+// Do not use relative imports they don't work on vercel idk why?? if you know send email sp359422@gmail.com
 // import loginIcon from '/workspaces/Smart-money/developement/front-end/smartmonkey/src/Assets/Login.png';
 import loginIcon from '../../Assets/Login.png';
 
