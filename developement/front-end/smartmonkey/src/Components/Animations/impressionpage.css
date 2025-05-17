@@ -1,0 +1,39 @@
+.impression-div{ 
+    padding: 20px;
+    padding-top: 65px;
+    border-radius: 10px; 
+    margin-left: 30%;
+    display: flex;
+    /* flex-direction: row; not needed as of now  */
+    height: 500px;
+}
+
+.text-italic {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    font-style: italic;
+}
+    
+.text-normal {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    font-style: normal;
+}
+.sub-text{
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: monospace;
+    font-weight: 400;
+}
+.design{
+    position: relative;
+    width: 50%;
+    /* border-right: dotted 1px; */
+}
+
+.dollarbill{
+    padding-left: 130px;
+    height: 180px;
+    width: fit-content;
+    box-shadow: 20px 0px 0px 0px rgb(160, 160, 160);
+}
