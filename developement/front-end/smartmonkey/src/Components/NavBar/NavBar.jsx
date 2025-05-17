@@ -3,7 +3,8 @@ import React from "react";
 import Logo from "../Logo/Logo";
 import './NavBar.css';
 import { Link } from 'react-router-dom';
-import loginIcon from '/workspaces/Smart-money/developement/front-end/smartmonkey/src/Assets/Login.png';
+// import loginIcon from '/workspaces/Smart-money/developement/front-end/smartmonkey/src/Assets/Login.png';
+import loginIcon from '../../Assets/Login.png';
 
 
 function NavBar(){
