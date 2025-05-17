@@ -5,19 +5,20 @@
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    
+    font-family: denton;
+    font-weight: 300;
+    background-color: rgb(218, 218, 218);
 }
 .Header-text{
     font-style: normal;
     font-family:denton;
-    color: rgb(255, 255, 255);
+    color: black;
     font-size: 52px;
     font-weight: 700;
     line-height: 60px;
     letter-spacing: -0.6px;
     font-size: 15;
     position:relative;
-
 }
 .parent{
     display: inline-block;
@@ -50,4 +51,7 @@
     display: inline-block;
     justify-content: center;
     width: 20%;
+}
+.function{
+
 }

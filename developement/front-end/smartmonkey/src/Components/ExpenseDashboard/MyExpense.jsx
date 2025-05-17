@@ -1,5 +1,6 @@
 import React from "react";
 import "./MyExpense.css";
+// import SmartMoney from "../Assets/SmartMoney.gif";
 import { useState } from "react";
 
 function MyExpense(){
@@ -27,7 +28,7 @@ function MyExpense(){
    
     return <div className="addExpesePage">
         <div className="function">
-            <p className="Header-text">Add your Expenses</p>
+            <p className="Header-text">Personal Finance Tracker</p>
             <input  placeholder="Enter your expense" onChange={handleChange}></input>
             <div className="parent">
                 <button className="button" onClick={addToList}>Add Expense</button>
