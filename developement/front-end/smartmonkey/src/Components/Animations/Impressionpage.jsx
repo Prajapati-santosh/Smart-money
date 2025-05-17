@@ -1,4 +1,5 @@
 import './impressionpage.css';
+//commit on main
 // do not use relative impoers use imports as below react does not support it 
 // import fivedollarbill from '/workspaces/Smart-money/developement/front-end/smartmonkey/src/Assets/fiveDollarBill.jpeg';
 // import fivedollarbillCropped from '/workspaces/Smart-money/developement/front-end/smartmonkey/src/Assets/Croppedfivedollarbill.jpg';
