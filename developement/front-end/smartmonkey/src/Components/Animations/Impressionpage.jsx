@@ -1,4 +1,5 @@
 import './impressionpage.css';
+// do not use relative impoers use imports as below
 // import fivedollarbill from '/workspaces/Smart-money/developement/front-end/smartmonkey/src/Assets/fiveDollarBill.jpeg';
 // import fivedollarbillCropped from '/workspaces/Smart-money/developement/front-end/smartmonkey/src/Assets/Croppedfivedollarbill.jpg';
 import fivedollarbillCropped from '../../Assets/Croppedfivedollarbill.jpg';
