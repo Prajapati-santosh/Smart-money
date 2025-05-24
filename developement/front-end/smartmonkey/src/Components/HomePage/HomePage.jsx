@@ -5,12 +5,14 @@ import NavBar from '../NavBar/NavBar.jsx';
 import Footer from '../Footer/Footer';
 import ScrollableText from '../Animations/ScrollableText';
 import Impressionpage from "../Animations/Impressionpage.jsx";
+import NewsLetter from "../NewsLetter/NewsLetter.jsx";
 
 function HomePage(){
     return <div>
         <NavBar/>
         <Impressionpage/>
         <ScrollableText/>
+        <NewsLetter/>
         <Footer/>
     </div>
 }

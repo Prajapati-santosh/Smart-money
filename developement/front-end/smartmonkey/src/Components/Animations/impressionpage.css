@@ -4,7 +4,6 @@
     border-radius: 10px; 
     margin-left: 30%;
     display: flex;
-    /* flex-direction: row; not needed as of now  */
     height: 500px;
 }
 
