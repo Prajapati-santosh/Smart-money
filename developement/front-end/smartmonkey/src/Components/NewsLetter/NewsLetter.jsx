@@ -9,14 +9,16 @@ function NewsLetter(){
         setEmail(e.target.value);
     }
     function resetState() {
-    setEmail("");  // ✅ Properly clears the input
+    setEmail("");  
     document.querySelector(".newsInput").value="";
     console.log("reset state called, email set to:", email);
     }
 
     function handleClick(){
         console.log(email);
-        const api_url='https://nodejs-serverless-function-express-psi-hazel.vercel.app/newsLetter';
+        const URL=process.env.REACT_APP_API_URL;
+        const api_url=`${URL}`+'/newsLetter';
+        console.log(api_url);
         axios.post(api_url,{Email:email}).then(
             (response)=>{
                 console.log(response);

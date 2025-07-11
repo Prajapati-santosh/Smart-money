@@ -1,20 +1,33 @@
 .my-expense{
+    display: grid;
+    grid-template-columns: 240fr 1000fr;
 }
-
-.side-bar{
-    width: 25%;
-    background-color: rgb(130, 130, 130);
-    height:100%;
-    width:200px;
-    background-color:#fff;
-    position:fixed!important;
-    z-index:1;
-    overflow:auto
+.dash-board{
+    display: flex;
 }
-
-.expense-content{
-    margin-left: 25%;
-    width: 100%;
-    background-color: blue;
-    height: 100%;
+.dashboard-content{
+    display:grid;
+    /* grid-template-columns: fr fr 2fr 2fr; */
+    max-width: 1200px;
+    gap:10px;
+}
+.income-card{
+    grid-column: 1;
+    grid-row: 1;
+}
+.expense-card{
+    grid-column: 2;
+    grid-row: 1;
+}
+.market-card{
+    grid-column: 3;
+    grid-row: 1 /span 2;
+}
+.spending-card{
+    grid-column: 4;
+    grid-row: 1 /span 2;
+}
+.transactions{
+    grid-column: 1 /span 3;
+    grid-row: 2 ;
 }
