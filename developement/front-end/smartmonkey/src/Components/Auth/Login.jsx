@@ -19,7 +19,7 @@ function Login(){
     }
     const handleClickGet=()=>{
         // const url='https://ubiquitous-guacamole-4prj6pw7rrr277v5-3000.app.github.dev/getInfo'; test link
-        const url='https://nodejs-serverless-function-express-miracq4kk.vercel.app/getInfo'; /*prod link*/
+        const url='https://nodejs-serverless-function-express-psi-hazel.vercel.app/getInfo'; /*prod link*/
         axios.get(url).then(
             response=>{
                 console.log(response.data);
