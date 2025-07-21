@@ -7,6 +7,9 @@ function Pass(props){
     const userName=`${props.input}`;
 
     const callApi=async()=>{
+        if(userName==null || passkey==null ){
+            return console.log("Username or password not provided");
+        }
         // const query='https://ubiquitous-guacamole-4prj6pw7rrr277v5-3000.app.github.dev/Login' test link
         const query=`https://nodejs-serverless-function-express-psi-hazel.vercel.app/Login/`; /*pd link*/
         try {
