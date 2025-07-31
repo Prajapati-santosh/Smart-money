@@ -5,11 +5,13 @@ import axios from 'axios';
 function Pass(props){
     const [passkey ,setPassKey]=useState("");
     const userName=`${props.input}`;
+    const [formSubmit,setformSubmit]=useState(false);
 
     const callApi=async()=>{
         if(userName==null || passkey==null ){
             return console.log("Username or password not provided");
         }
+        setformSubmit(true);
         // const query='https://ubiquitous-guacamole-4prj6pw7rrr277v5-3000.app.github.dev/Login' test link
         const query=`https://nodejs-serverless-function-express-psi-hazel.vercel.app/Login/`; /*pd link*/
         try {
@@ -24,8 +26,9 @@ function Pass(props){
         }
     }
     return <div>
-        <input className="input-class" onChange={(e)=>{setPassKey(e.target.value);}} placeholder="Enter your password"></input>
-        <button className="SubmitAPICall" onClick={callApi}>Submit</button>
+        {formSubmit || 
+         <input className="input-class" onChange={(e)=>{setPassKey(e.target.value);}} placeholder="Enter your password"></input>}
+         <button className="SubmitAPICall" onClick={callApi}>Submit</button>
     </div>
 }
 
