@@ -1,7 +1,9 @@
 import './MyExpense.css'
 import Card from './Card.jsx';
+import AuthContext from '../../context/AuthContext.jsx';
 
 function MyExpense() {
+    console.log(AuthContext);
     return <div>
         <div className='my-expense'>
             <div className='side-bar'>

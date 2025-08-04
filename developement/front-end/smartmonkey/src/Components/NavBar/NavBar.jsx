@@ -14,7 +14,7 @@ function NavBar(){
         <Logo/>
         <ul className="ulist">
             <li className="Links"><Link className="Link" to="/Products">Products</Link></li>
-            <li className="Links"><Link className="Link"to="/MyExpense">About</Link></li>
+            <li className="Links"><Link className="Link"to="/dashboard">About</Link></li>
             <li className="Links"><Link className="Link"to="/Login">
                 <img  height="30px" alt="Login" src={loginIcon}></img>
             </Link></li>
