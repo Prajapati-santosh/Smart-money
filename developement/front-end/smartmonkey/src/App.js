@@ -7,6 +7,7 @@ import MyExpense from './Components/ExpenseDashboard/MyExpense';
 import AuthContext from './context/AuthContext';
 import { useEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import ProtectedRoute from './Components/Auth/ProtectedRoute';
 
 function App() {
   const [isAutheticated, setIsAuthenticated] = useState(false);
@@ -28,11 +29,9 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="*" element={<PageNotFound />} />
-        {isAutheticated ? (
+        {/* <Route element={<ProtectedRoute/>}> */}
           <Route path="/dashboard" element={<MyExpense />} />
-        ) : (
-          <Route path="/Login" element={<Login />} />
-        )}
+        {/* </Route> */}
         <Route path="/Login" element={<Login />} />
       </Routes>
     </BrowserRouter>

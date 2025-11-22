@@ -1,33 +1,81 @@
 .my-expense{
-    display: grid;
-    grid-template-columns: 240fr 1000fr;
-}
-.dash-board{
     display: flex;
+    flex-direction: row;
+    background-color: white;
 }
-.dashboard-content{
-    display:grid;
-    /* grid-template-columns: fr fr 2fr 2fr; */
-    max-width: 1200px;
-    gap:10px;
+.nav-bar-content{
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    width: 100%;
+    height: 40px;
+    margin-top: 4px;
+    color: rgb(60, 60, 60);
+    padding: 5px;
+    img{
+        height: 24px;
+        padding-left:2px;
+    }
+    
 }
-.income-card{
-    grid-column: 1;
-    grid-row: 1;
+.nav-bar-content:hover{
+    background-color: rgb(75, 75, 244);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    label{
+        cursor: pointer;
+    }
 }
-.expense-card{
-    grid-column: 2;
-    grid-row: 1;
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 30%;
+    height: 100vh;   
+    box-shadow: 6px 0 12px rgba(0, 0, 0, 0.15); /* Right-side shadow */
+    z-index: 1; /* Ensure it's above other elements */ 
 }
-.market-card{
-    grid-column: 3;
-    grid-row: 1 /span 2;
+
+.expense-logo{
+    font-family: denton;
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 25px;
 }
-.spending-card{
-    grid-column: 4;
-    grid-row: 1 /span 2;
+.sidebar-options{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 90vh;
+    justify-content: space-around;
 }
-.transactions{
-    grid-column: 1 /span 3;
-    grid-row: 2 ;
+.main-content{
+    position: relative;
+    width: 100%;
+    .heading{
+        font-family: roboto;
+        padding-left: 18px;
+        padding-top: 15px;
+    }
+    .heading-h1{
+        padding-top: 10px;
+        color: black;
+        margin: 0;
+        font-size: 30px;
+    }
+    .heading-h5{
+        margin: 0;
+        font-size: 15px;
+        color: rgb(97, 97, 97);
+    }
+    .dash-board{
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+        justify-content: space-around;
+    }
 }
