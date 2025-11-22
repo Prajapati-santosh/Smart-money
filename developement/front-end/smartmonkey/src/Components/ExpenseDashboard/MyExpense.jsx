@@ -1,58 +1,55 @@
-import './MyExpense.css'
+import './MyExpense.css';
+import {Home,Transactions,Account,Goals,Chart,PiggyBank,Down,Up,Dollar} from '../images.jsx';
+import Logo from '../Logo/Logo.jsx';
 import Card from './Card.jsx';
-import AuthContext from '../../context/AuthContext.jsx';
 
 function MyExpense() {
-    console.log(AuthContext);
     return <div>
         <div className='my-expense'>
             <div className='side-bar'>
-                Side bar
+                <Logo className="expense-logo"/>
+                <div className='sidebar-options'>
+                    <div className='first'>
+                        <div className='nav-bar-content'>
+                            <img src={Home} alt='dashboard'></img>
+                            <label>&nbsp;Dashboard</label>
+                        </div>
+                        <div className='nav-bar-content'>
+                            <img src={Transactions} alt='dashboard'></img>
+                            <label>&nbsp;Transactions</label>
+                        </div>
+                        <div className='nav-bar-content'>
+                            <img src={Goals} alt='dashboard'></img>
+                            <label> &nbsp;Goals</label>
+                        </div>
+                        <div className='nav-bar-content'>
+                            <img src={Chart} alt='dashboard'></img>
+                            <label> &nbsp;Analytics</label>
+                        </div>
+                    </div>
+                    <div className='second'>
+                        <div className='nav-bar-content'>
+                            <img src={Account} alt='Account'></img>
+                            <label> &nbsp;Account</label>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className='dash-board'>
-                <div className='dashboard-content'>
-                    <Card className="income-card"
-                        heading="Total Income"
-                        dimensions={{ height: "90px", width: "140px" }}
-                        color="white"
-                        borderRadius='true'
-                        content={<div>
-                            <div style={{ fontFamily: "sans-serif", fontSize: "30px" }}>$4000</div>
-                            <div>10%^</div>
-                        </div>}
-                    />
-                    <Card className="expense-card"
-                        heading="Total Expenses"
-                        dimensions={{ height: "90px", width: "150px" }}
-                        color="white"
-                        borderRadius='true'
-                        content={<div>
-                            <div style={{ fontFamily: "sans-serif", fontSize: "30px" }}>$400</div>
-                            <div>10%^</div>
-                        </div>}
-                    />
-                    <Card className="market-card"
-                    heading="Market Trends"
-                    dimensions={{height:"300px",width:"200px"}}
-                    color="white"
-                    borderRadius="true"
-
-                    />
-                    <Card className="spending-card"
-                    heading="Spending Trends"
-                    dimensions={{height:"300px",width:"200px"}}
-                    color="white"
-                    borderRadius="true"
-
-                    />
-                    <Card className="transactions"
-                    heading="Reccent transactions"
-                    dimensions={{height:"200px",width:"300px"}}
-                    color="white"
-                    borderRadius="true"
-
-                    />
-                   
+            <div className='main-content'>
+                <div className='heading'>
+                    <p className='heading-h1'>Financial Dashboard</p>
+                    <p className='heading-h5'>Welcome Back! Here's your financial overview</p>
+                    <hr></hr>
+                </div>
+                <div className='dash-board'>
+                    <Card logo={Dollar} heading={"Total Balance"} subHeading={"$12000"} height={170} width={255} color={"white"}
+                        logoColor={"#d9f1daff"} subHeadinColor={"green"} symbol={"^10%"}/>
+                    <Card logo={Up} heading={"Monthly Income"} subHeading={"$8420.00"} height={170} width={255} color={"white"}
+                        logoColor={"#98e7faff"} subHeadinColor={"blue"} symbol={"+8.2%"}/>
+                    <Card logo={Down} heading={"Monthly Expenses"} subHeading={"$2400"} height={170} width={255} color={"white"}
+                        logoColor={"#f49898ff"} subHeadinColor={"red"} symbol={"-3.1%"}/>
+                    <Card logo={PiggyBank} heading={"Savings goal"} subHeading={"$2400"} height={170} width={255} color={"white"}
+                        logoColor={"#d5a2f3ff"} subHeadinColor={"purple"} symbol={"+15.7%"}/>
                 </div>
             </div>
         </div>
